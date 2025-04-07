@@ -1,0 +1,18 @@
+ Lista de filmes
+filmes = ["A Origem", "Titanic", "O Senhor dos Anéis", "Matrix", "Star Wars"]
+
+# Exibindo a lista de filmes
+print("Escolha um filme da lista abaixo:")
+for i, filme in enumerate(filmes, start=1):
+    print(f"{i}. {filme}")
+    
+    # Solicita ao usuário que escolha um jogo
+escolha = input("Digite o número do jogo que você deseja comprar: ")
+
+# Verifica se a escolha está no estoque
+if escolha in estoque:
+    print(f"Você escolheu: {estoque[escolha]}. Obrigado pela compra!")
+else:
+    print("Desculpe, esse jogo não está disponível. Por favor, escolha um número válido.")
+
+print("Até a próxima!")
